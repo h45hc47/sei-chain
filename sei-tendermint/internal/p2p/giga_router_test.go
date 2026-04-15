@@ -232,7 +232,6 @@ func TestInitChainCommitThenFinalize(t *testing.T) {
 }
 
 func TestGigaRouter_FinalizeBlocks(t *testing.T) {
-	t.Skip("Skipped: hangs waiting for txs — pre-existing consensus issue from #3224")
 	const maxTxsPerBlock = 20
 	const blocksPerLane = 5
 	const txGasUsed = 21_000
